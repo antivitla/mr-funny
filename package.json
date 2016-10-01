@@ -1,0 +1,30 @@
+{
+  "name": "mr-funny",
+  "version": "1.0.0",
+  "description": "Generate random funny placeholder phrases",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
+    "concurrently": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "testem": "^1.12.0"
+  },
+  "scripts": {
+    "test": "concurrently \"testem\" \"gulp watch\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antivitla/mr-funny.git"
+  },
+  "keywords": [
+    "funny",
+    "generator",
+    "random",
+    "placeholder"
+  ],
+  "author": "Виталий Кулешин <antivitla@gmail.com> (http://mr-woodman.ru/)",
+  "license": "MIT"
+}
