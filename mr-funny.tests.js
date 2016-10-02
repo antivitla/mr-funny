@@ -131,11 +131,12 @@
 	  return function (array) {
 	    var value = selectFrom(array);
 	    while (value == lastValue) {
-	      console.log(array, lastValue, value);
 	      value = selectFrom(array);
 	    }
 	    lastValue = value;
+
 	    return value;
+
 	    function selectFrom(array) {
 	      return array[parseInt(Math.random() * array.length)];
 	    }

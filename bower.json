@@ -2,6 +2,7 @@
   "name": "mr-funny",
   "description": "Generate random funny placeholder phrases",
   "main": "mr-funny.browser.js",
+  "moduleType": ["globals"],
   "authors": [
     "Виталий Кулешин <antivitla@gmail.com> (http://mr-woodman.ru/)"
   ],
@@ -20,10 +21,10 @@
     "test",
     "tests",
     "journal.md",
-    "*.module.js",
     "*.tests.js",
     "gulpfile.js",
     "webpack.config.js",
-    "testem.json"
+    "testem.json",
+    "package.json"
   ]
 }

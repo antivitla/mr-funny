@@ -2,23 +2,19 @@
   "name": "mr-funny",
   "version": "1.0.3",
   "description": "Generate random funny placeholder phrases",
-  "main": "mr-funny.module.js",
-  "dependencies": {
-    "chance": "^1.0.4"
-  },
+  "main": "mr-funny.node.js",
   "devDependencies": {
     "babel-core": "^6.16.0",
     "babel-loader": "^6.2.5",
     "babel-preset-es2015": "^6.16.0",
-    "concurrently": "^3.0.0",
     "gulp": "^3.9.1",
-    "gulp-babel": "^6.1.2",
-    "gulp-include": "^2.3.1",
+    "gulp-rename": "^1.2.2",
     "testem": "^1.12.0",
     "webpack": "^1.13.2"
   },
   "scripts": {
-    "test:win": "start webpack & start testem"
+    "test:win": "start webpack -w & start testem",
+    "prepublish": "gulp & webpack"
   },
   "repository": {
     "type": "git",

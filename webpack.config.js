@@ -26,12 +26,11 @@ function generateEntries(array, name) {
  * Webpack config
  */
 module.exports = {
-  entry: generateEntries(["browser", "module", "tests"], name),
+  entry: generateEntries(["browser", "node", "tests"], name),
   output: {
     filename: name + ".[name].js",
   },
   module: {
     loaders: [{ test: /\.js$/, loader: "babel" }]
-  },
-  watch: true
+  }
 };
