@@ -1,3 +1,5 @@
+import funny from "./mr-funny";
+
 describe("ma tes'suite",  function () {
   const funnyMatcher = {
     toBeFunny: () => ({
@@ -18,7 +20,10 @@ describe("ma tes'suite",  function () {
 
   describe("Words", () => {
     it("Be different", () => {
-      expect(funny.word()).not.toEqual(funny.word())
+      expect(funny.word()).not.toEqual(funny.word());
+      expect(funny.word()).not.toEqual(funny.word());
+      expect(funny.word()).not.toEqual(funny.word());
+      expect(funny.word()).not.toEqual(funny.word());
     });
 
     it("Be many", () => {
@@ -26,5 +31,4 @@ describe("ma tes'suite",  function () {
       expect(funny.dictionary.words.length).toBeGreaterThan(1);
     });
   });
-
 });

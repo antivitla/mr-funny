@@ -1,5 +1,10 @@
 .*
+node_modules
+bower_components
 bower.json
-gulpfile.js
 journal.md
+*.tests.js
 testem.json
+gulpfile.js
+webpack.config.json
+src

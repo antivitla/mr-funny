@@ -2,7 +2,7 @@
   "name": "mr-funny",
   "version": "1.0.2",
   "description": "Generate random funny placeholder phrases",
-  "main": "index.node.js",
+  "main": "mr-funny.module.js",
   "dependencies": {
     "chance": "^1.0.4"
   },
@@ -18,7 +18,7 @@
     "webpack": "^1.13.2"
   },
   "scripts": {
-    "test:win": "start gulp watch & start testem"
+    "test:win": "start webpack & start testem"
   },
   "repository": {
     "type": "git",

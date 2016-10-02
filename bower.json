@@ -1,7 +1,7 @@
 {
   "name": "mr-funny",
   "description": "Generate random funny placeholder phrases",
-  "main": "index.bower.js",
+  "main": "mr-funny.browser.js",
   "authors": [
     "Виталий Кулешин <antivitla@gmail.com> (http://mr-woodman.ru/)"
   ],
@@ -19,10 +19,11 @@
     "bower_components",
     "test",
     "tests",
-    "**/*.es",
-    "gulpfile.js",
     "journal.md",
-    "package.json",
+    "*.module.js",
+    "*.tests.js",
+    "gulpfile.js",
+    "webpack.config.js",
     "testem.json"
   ]
 }
