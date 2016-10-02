@@ -1,4 +1,5 @@
 import funny from "./mr-funny";
+import random from "./mr-random";
 
 describe("mr-funny (may the " + funny.word() + " be with you) test suite",  function () {
   const funnyMatcher = {
@@ -28,8 +29,36 @@ describe("mr-funny (may the " + funny.word() + " be with you) test suite",  func
     });
 
     it("Be many", () => {
-      console.log(`Длина словаря: ${funny.dictionary.words.length}`);
-      expect(funny.dictionary.words.length).toBeGreaterThan(1);
+      console.log(`Длина словаря: ${funny.dictionary.length}`);
+      expect(funny.dictionary.length).toBeGreaterThan(1);
+    });
+
+    it("Can form simple phrase", () => {
+      var phrase = ["may the", funny.word(), "be with you!"]
+      expect(funny.phrase(phrase)).toBe(phrase.join(" "));
+    });
+
+    it("Can be used in different forms with different other", () => {
+      var template = [
+        "да",
+        {
+          a: "пребудет",
+          b: "пребудут"
+        },
+        "c тобой",
+        {
+          a: ["карлсон", "петрушка", "алкоголь", "мама", "слива", "сила печенья"],
+          b: ["штаны", "куклы", "деньги"]
+        },
+        "и",
+        function () {
+          return funny.word();
+        },
+        "!"
+      ];
+      console.log("Фраза 1:", funny.interpolate(template));
+      console.log("Фраза 2:", funny.interpolate(template));
+      expect(funny.interpolate(template)).not.toEqual(funny.interpolate(template));
     });
   });
 });

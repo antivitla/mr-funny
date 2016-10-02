@@ -57,11 +57,11 @@ gulp.task("export", [
 // Test
 
 gulp.task("test-node", function () {
-  run("mocha *.node.tests.js").exec();
+  return run("mocha *.node.tests.js").exec();
 });
 
 gulp.task("test-browser", function () {
-  run("jasmine *.browser.tests.js").exec();
+  return run("jasmine *.browser.tests.js").exec();
 });
 
 gulp.task("test", ["test-node", "test-browser"]);

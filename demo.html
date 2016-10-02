@@ -1,4 +1,40 @@
 <meta charset="utf-8">
 <h1></h1>
+<article></article>
 <script src="mr-funny.browser.js"></script>
-<script>document.querySelector("h1").innerHTML = funny.word();</script>
+<script>
+  (function () {
+    var hero = funny.word();
+    document.querySelector("h1").innerHTML = hero;
+    var template = [
+      "Жил-был",
+      ["кто-то", "я забыл кто"], ".",
+      "И было у него три сына: ",
+      funny.word(), ",", funny.word(), "и", funny.word(), ".",
+      "Но не всем",
+      {
+        a: "нравился",
+        b: "нравились"
+      },
+      {
+        a: function () {
+          return funny.dictionary.filter((word) => {
+            return !Boolean(word.plural);
+          }).map((obj) => obj.word);
+        },
+        b: function () {
+          return funny.dictionary.filter((word) => {
+            return Boolean(word.plural);
+          }).map((obj) => obj.word);
+        }
+      },
+      "..."
+    ];
+    document.querySelector("article").innerHTML = funny.phrase(template);
+  }())
+</script>
+<style>
+  h1 {
+    text-transform: capitalize;
+  }
+</style>
