@@ -52,7 +52,9 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	module.exports = _mrFunny2.default;
+	exports.default = _mrFunny2.default;
+	module.exports = exports.default;
+	module.exports.default = module.exports;
 
 /***/ },
 /* 1 */
