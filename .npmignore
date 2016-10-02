@@ -5,6 +5,7 @@ journal.md
 *.tests.js
 testem.json
 gulpfile.js
-webpack.config.json
+webpack.config.js
 src
 bower.json
+README.CONTRIBUTORS.md
