@@ -18,6 +18,11 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "**/*.es",
+    "gulpfile.js",
+    "journal.md",
+    "package.json",
+    "testem.json"
   ]
 }
