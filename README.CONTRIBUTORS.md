@@ -1,6 +1,6 @@
 # Development environment
 
-I use Webpack, Gulp as builder CLI and Jasmine and Mocha as testing CLI, so you need them globally
+I use Webpack/Gulp as builder CLI and Jasmine/Mocha as testing CLI, so you need them globally
 
   `$ npm install -g webpack gulp jasmine mocha`
 
