@@ -8,26 +8,6 @@ describe("ma tes'suite",  function () {
     })
   };
 
-  var funny = {
-    word: function () {
-      let word = this.random(this.dictionary.words);
-      while(word == this.last.word) {
-        word = this.random(this.dictionary.words);
-      }
-      this.last.word = word;
-      return word;
-    },
-    last: {
-      word: ""
-    },
-    random: (array) => {
-      return array[parseInt(Math.random() * array.length)];
-    },
-    dictionary: {
-      words: ["трактор", "пассатижи", "орангутанг"]
-    }
-  }
-
   beforeEach(() => {
     jasmine.addMatchers(funnyMatcher);
   });
@@ -42,6 +22,7 @@ describe("ma tes'suite",  function () {
     });
 
     it("Be many", () => {
+      console.log(`Длина словаря: ${funny.dictionary.words.length}`);
       expect(funny.dictionary.words.length).toBeGreaterThan(1);
     });
   });

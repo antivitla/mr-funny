@@ -1,0 +1,23 @@
+{
+  "name": "mr-funny",
+  "description": "Generate random funny placeholder phrases",
+  "main": "index.bower.js",
+  "authors": [
+    "Виталий Кулешин <antivitla@gmail.com> (http://mr-woodman.ru/)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "funny",
+    "generator",
+    "random",
+    "placeholder"
+  ],
+  "homepage": "https://github.com/antivitla/mr-funny",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

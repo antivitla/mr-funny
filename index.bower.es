@@ -1,0 +1,1 @@
+//=include mr-funny.es

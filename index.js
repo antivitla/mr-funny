@@ -14,26 +14,6 @@ describe("ma tes'suite", function () {
     }
   };
 
-  var funny = {
-    word: function word() {
-      var word = this.random(this.dictionary.words);
-      while (word == this.last.word) {
-        word = this.random(this.dictionary.words);
-      }
-      this.last.word = word;
-      return word;
-    },
-    last: {
-      word: ""
-    },
-    random: function random(array) {
-      return array[parseInt(Math.random() * array.length)];
-    },
-    dictionary: {
-      words: ["трактор", "пассатижи", "орангутанг"]
-    }
-  };
-
   beforeEach(function () {
     jasmine.addMatchers(funnyMatcher);
   });
@@ -48,6 +28,7 @@ describe("ma tes'suite", function () {
     });
 
     it("Be many", function () {
+      console.log("\u0414\u043B\u0438\u043D\u0430 \u0441\u043B\u043E\u0432\u0430\u0440\u044F: " + funny.dictionary.words.length);
       expect(funny.dictionary.words.length).toBeGreaterThan(1);
     });
   });
