@@ -1,6 +1,11 @@
 {
   "framework": "jasmine2",
   "src_files": [
-    "*.tests.js"
-  ]
+    "*.browser.tests.js"
+  ],
+  "launchers": {
+    "Mocha": {
+      "command": "mocha *.node.tests.js"
+    }
+  }
 }

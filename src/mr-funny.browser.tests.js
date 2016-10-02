@@ -1,6 +1,6 @@
 import funny from "./mr-funny";
 
-describe("ma tes'suite",  function () {
+describe("mr-funny (may the " + funny.word() + " be with you) test suite",  function () {
   const funnyMatcher = {
     toBeFunny: () => ({
       compare: (actual, expected) => ({
@@ -15,6 +15,7 @@ describe("ma tes'suite",  function () {
   });
 
   it("Should give funny word", function () {
+    console.log("May the " + funny.word() + " be with you!");
     expect(funny.word()).toBeFunny();
   });
 

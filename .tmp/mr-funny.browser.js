@@ -52,42 +52,9 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	describe("ma tes'suite", function () {
-	  var funnyMatcher = {
-	    toBeFunny: function toBeFunny() {
-	      return {
-	        compare: function compare(actual, expected) {
-	          return {
-	            pass: Boolean(actual),
-	            message: actual ? "\"" + expected + "\" is enough funny" : "\"" + expected + "\" is not enough funny"
-	          };
-	        }
-	      };
-	    }
-	  };
-
-	  beforeEach(function () {
-	    jasmine.addMatchers(funnyMatcher);
-	  });
-
-	  it("Should give funny word", function () {
-	    expect(_mrFunny2.default.word()).toBeFunny();
-	  });
-
-	  describe("Words", function () {
-	    it("Be different", function () {
-	      expect(_mrFunny2.default.word()).not.toEqual(_mrFunny2.default.word());
-	      expect(_mrFunny2.default.word()).not.toEqual(_mrFunny2.default.word());
-	      expect(_mrFunny2.default.word()).not.toEqual(_mrFunny2.default.word());
-	      expect(_mrFunny2.default.word()).not.toEqual(_mrFunny2.default.word());
-	    });
-
-	    it("Be many", function () {
-	      console.log("\u0414\u043B\u0438\u043D\u0430 \u0441\u043B\u043E\u0432\u0430\u0440\u044F: " + _mrFunny2.default.dictionary.words.length);
-	      expect(_mrFunny2.default.dictionary.words.length).toBeGreaterThan(1);
-	    });
-	  });
-	});
+	if (window && window.document) {
+	  window.funny = _mrFunny2.default;
+	}
 
 /***/ },
 /* 1 */
@@ -110,7 +77,7 @@
 	    return (0, _mrRandom2.default)(this.dictionary.words);
 	  },
 	  dictionary: {
-	    words: ["трактор", "пассатижи"]
+	    words: ["трактор", "пассатижи", "землячок", "алконавт"]
 	  }
 	};
 

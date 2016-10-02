@@ -52,9 +52,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	if (window && window.document) {
-	  window.funny = _mrFunny2.default;
-	}
+	module.exports = _mrFunny2.default;
 
 /***/ },
 /* 1 */

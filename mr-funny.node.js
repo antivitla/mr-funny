@@ -1,4 +1,4 @@
-/******/ (function(modules) { // webpackBootstrap
+module.exports = /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 
@@ -52,9 +52,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	exports.default = _mrFunny2.default;
-	module.exports = exports.default;
-	module.exports.default = module.exports;
+	module.exports = _mrFunny2.default;
 
 /***/ },
 /* 1 */
@@ -77,7 +75,7 @@
 	    return (0, _mrRandom2.default)(this.dictionary.words);
 	  },
 	  dictionary: {
-	    words: ["трактор", "пассатижи"]
+	    words: ["трактор", "пассатижи", "землячок", "алконавт"]
 	  }
 	};
 
