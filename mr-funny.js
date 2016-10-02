@@ -5,7 +5,7 @@ const funny = {
     return random(this.dictionary.words);
   },
   dictionary: {
-    words: ["трактор", "пассатижи"]
+    words: ["трактор", "пассатижи", "землячок", "алконавт"]
   }
 };
 
