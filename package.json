@@ -1,6 +1,6 @@
 {
   "name": "mr-funny",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generate random funny placeholder phrases",
   "main": "index.node.js",
   "dependencies": {
