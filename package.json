@@ -3,6 +3,7 @@
   "version": "1.1.1",
   "description": "Generate random funny placeholder phrases",
   "main": "mr-funny.node.js",
+  "jsnext:main": "mr-funny.js",
   "devDependencies": {
     "babel-core": "^6.16.0",
     "babel-loader": "^6.2.5",
